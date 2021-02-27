@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+
+    <style>
+        table {
+            border: 1px solid #333;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        table td, table th {
+            padding: 10px;
+            border: 1px solid #333;
+        }
+    </style>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <th>Hours</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">8:00</td>
+                <td colspan="2">Java</td>
+                <td>B&D</td>
+                <td colspan="2" rowspan="2">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Singing</th>
+                                <th>Playing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Christmas Songs</td>
+                                <td>Ludo</td>
+                            </tr>
+                            <tr>
+                                <td>Highlife</td>
+                                <td>Soccer</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Comm. Skills</td>
+                <td>Web</td>
+                <td>Java</td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    
+</body>
+</html>

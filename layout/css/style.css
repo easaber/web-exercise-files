@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    grid-auto-rows: minmax(200px,auto);
+}
+
+.wrapper > div {
+    background: black;
+    color: #fff;
+    font-size: 50px;
+}
+
+.wrapper > div:nth-child(2n-1) {
+    background: #eee;
+    color: #333;
+}
+
+
+.box1 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.box6 {
+    grid-column: 1/4;
+}
